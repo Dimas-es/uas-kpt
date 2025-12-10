@@ -1,0 +1,131 @@
+=== Eksperimen Hybrid MPI-OpenMP ===
+
+Tanggal: Sat Dec  6 03:51:48 PM WIB 2025
+
+=== Sequential Baseline ===
+Sequential time: 0.780518
+Sequential N=512: 0.780518
+Sequential time: 15.184008
+Sequential N=1024: 15.184008
+
+=== Hybrid MPI-OpenMP Experiments ===
+=== Matrix Size: 512 x 512 ===
+Hybrid N=512 P=1 T=2 schedule=static: total=0.513096 compute=0.510299 comm=0.002797
+    Result: total=0.513096, compute=0.510299, comm=0.002797
+Hybrid N=512 P=1 T=2 schedule=dynamic: total=0.472099 compute=0.469301 comm=0.002797
+    Result: total=0.472099, compute=0.469301, comm=0.002797
+Hybrid N=512 P=1 T=2 schedule=guided: total=0.472781 compute=0.470132 comm=0.002649
+    Result: total=0.472781, compute=0.470132, comm=0.002649
+Hybrid N=512 P=1 T=4 schedule=static: total=0.524514 compute=0.522095 comm=0.002418
+    Result: total=0.524514, compute=0.522095, comm=0.002418
+Hybrid N=512 P=1 T=4 schedule=dynamic: total=0.684778 compute=0.681991 comm=0.002786
+    Result: total=0.684778, compute=0.681991, comm=0.002786
+Hybrid N=512 P=1 T=4 schedule=guided: total=0.542587 compute=0.540343 comm=0.002244
+    Result: total=0.542587, compute=0.540343, comm=0.002244
+Hybrid N=512 P=1 T=8 schedule=static: total=0.638103 compute=0.635409 comm=0.002693
+    Result: total=0.638103, compute=0.635409, comm=0.002693
+Hybrid N=512 P=1 T=8 schedule=dynamic: total=0.558632 compute=0.555957 comm=0.002673
+    Result: total=0.558632, compute=0.555957, comm=0.002673
+Hybrid N=512 P=1 T=8 schedule=guided: total=0.520845 compute=0.518168 comm=0.002677
+    Result: total=0.520845, compute=0.518168, comm=0.002677
+Hybrid N=512 P=2 T=2 schedule=static: total=0.488283 compute=0.441540 comm=0.046741
+    Result: total=0.488283, compute=0.441540, comm=0.046741
+Hybrid N=512 P=2 T=2 schedule=dynamic: total=0.476441 compute=0.458228 comm=0.018213
+    Result: total=0.476441, compute=0.458228, comm=0.018213
+Hybrid N=512 P=2 T=2 schedule=guided: total=0.511930 compute=0.486668 comm=0.025262
+    Result: total=0.511930, compute=0.486668, comm=0.025262
+Hybrid N=512 P=2 T=4 schedule=static: total=0.480845 compute=0.446688 comm=0.034156
+    Result: total=0.480845, compute=0.446688, comm=0.034156
+Hybrid N=512 P=2 T=4 schedule=dynamic: total=0.324491 compute=0.309365 comm=0.015126
+    Result: total=0.324491, compute=0.309365, comm=0.015126
+Hybrid N=512 P=2 T=4 schedule=guided: total=0.543728 compute=0.527289 comm=0.016439
+    Result: total=0.543728, compute=0.527289, comm=0.016439
+Hybrid N=512 P=2 T=8 schedule=static: total=0.493596 compute=0.477527 comm=0.016069
+    Result: total=0.493596, compute=0.477527, comm=0.016069
+Hybrid N=512 P=2 T=8 schedule=dynamic: total=0.475311 compute=0.458247 comm=0.017063
+    Result: total=0.475311, compute=0.458247, comm=0.017063
+Hybrid N=512 P=2 T=8 schedule=guided: total=0.368911 compute=0.331695 comm=0.037214
+    Result: total=0.368911, compute=0.331695, comm=0.037214
+Hybrid N=512 P=4 T=2 schedule=static: total=0.352368 compute=0.240211 comm=0.112156
+    Result: total=0.352368, compute=0.240211, comm=0.112156
+Hybrid N=512 P=4 T=2 schedule=dynamic: total=0.266932 compute=0.232442 comm=0.034489
+    Result: total=0.266932, compute=0.232442, comm=0.034489
+Hybrid N=512 P=4 T=2 schedule=guided: total=0.377285 compute=0.349039 comm=0.028246
+    Result: total=0.377285, compute=0.349039, comm=0.028246
+Hybrid N=512 P=4 T=4 schedule=static: total=0.326097 compute=0.296680 comm=0.029417
+    Result: total=0.326097, compute=0.296680, comm=0.029417
+Hybrid N=512 P=4 T=4 schedule=dynamic: total=0.326881 compute=0.283510 comm=0.043371
+    Result: total=0.326881, compute=0.283510, comm=0.043371
+Hybrid N=512 P=4 T=4 schedule=guided: total=0.313844 compute=0.276183 comm=0.037661
+    Result: total=0.313844, compute=0.276183, comm=0.037661
+Hybrid N=512 P=4 T=8 schedule=static: total=0.321078 compute=0.275751 comm=0.045326
+    Result: total=0.321078, compute=0.275751, comm=0.045326
+Hybrid N=512 P=4 T=8 schedule=dynamic: total=0.195060 compute=0.180410 comm=0.014649
+    Result: total=0.195060, compute=0.180410, comm=0.014649
+Hybrid N=512 P=4 T=8 schedule=guided: total=0.282778 compute=0.260983 comm=0.021794
+    Result: total=0.282778, compute=0.260983, comm=0.021794
+
+=== Matrix Size: 1024 x 1024 ===
+Hybrid N=1024 P=1 T=2 schedule=static: total=17.641595 compute=17.624849 comm=0.016745
+    Result: total=17.641595, compute=17.624849, comm=0.016745
+Hybrid N=1024 P=1 T=2 schedule=dynamic: total=17.400444 compute=17.382092 comm=0.018351
+    Result: total=17.400444, compute=17.382092, comm=0.018351
+Hybrid N=1024 P=1 T=2 schedule=guided: total=17.540463 compute=17.523616 comm=0.016846
+    Result: total=17.540463, compute=17.523616, comm=0.016846
+Hybrid N=1024 P=1 T=4 schedule=static: total=17.759424 compute=17.743043 comm=0.016381
+    Result: total=17.759424, compute=17.743043, comm=0.016381
+Hybrid N=1024 P=1 T=4 schedule=dynamic: total=17.652104 compute=17.634198 comm=0.017904
+    Result: total=17.652104, compute=17.634198, comm=0.017904
+Hybrid N=1024 P=1 T=4 schedule=guided: total=17.534642 compute=17.521278 comm=0.013364
+    Result: total=17.534642, compute=17.521278, comm=0.013364
+Hybrid N=1024 P=1 T=8 schedule=static: total=16.951645 compute=16.933359 comm=0.018285
+    Result: total=16.951645, compute=16.933359, comm=0.018285
+Hybrid N=1024 P=1 T=8 schedule=dynamic: total=14.004300 compute=13.993658 comm=0.010642
+    Result: total=14.004300, compute=13.993658, comm=0.010642
+Hybrid N=1024 P=1 T=8 schedule=guided: total=12.570167 compute=12.556527 comm=0.013640
+    Result: total=12.570167, compute=12.556527, comm=0.013640
+Hybrid N=1024 P=2 T=2 schedule=static: total=8.601573 compute=8.590712 comm=0.010860
+    Result: total=8.601573, compute=8.590712, comm=0.010860
+Hybrid N=1024 P=2 T=2 schedule=dynamic: total=7.118500 compute=7.106537 comm=0.011963
+    Result: total=7.118500, compute=7.106537, comm=0.011963
+Hybrid N=1024 P=2 T=2 schedule=guided: total=7.006065 compute=6.996686 comm=0.009376
+    Result: total=7.006065, compute=6.996686, comm=0.009376
+Hybrid N=1024 P=2 T=4 schedule=static: total=8.639458 compute=8.502649 comm=0.136808
+    Result: total=8.639458, compute=8.502649, comm=0.136808
+Hybrid N=1024 P=2 T=4 schedule=dynamic: total=9.610837 compute=9.599512 comm=0.011325
+    Result: total=9.610837, compute=9.599512, comm=0.011325
+Hybrid N=1024 P=2 T=4 schedule=guided: total=9.380852 compute=9.370317 comm=0.010535
+    Result: total=9.380852, compute=9.370317, comm=0.010535
+Hybrid N=1024 P=2 T=8 schedule=static: total=8.243018 compute=8.233492 comm=0.009526
+    Result: total=8.243018, compute=8.233492, comm=0.009526
+Hybrid N=1024 P=2 T=8 schedule=dynamic: total=7.432510 compute=7.421555 comm=0.010955
+    Result: total=7.432510, compute=7.421555, comm=0.010955
+Hybrid N=1024 P=2 T=8 schedule=guided: total=8.992543 compute=8.871052 comm=0.121490
+    Result: total=8.992543, compute=8.871052, comm=0.121490
+Hybrid N=1024 P=4 T=2 schedule=static: total=4.992306 compute=4.879299 comm=0.113006
+    Result: total=4.992306, compute=4.879299, comm=0.113006
+Hybrid N=1024 P=4 T=2 schedule=dynamic: total=5.271576 compute=5.117973 comm=0.153602
+    Result: total=5.271576, compute=5.117973, comm=0.153602
+Hybrid N=1024 P=4 T=2 schedule=guided: total=4.971530 compute=4.960045 comm=0.011485
+    Result: total=4.971530, compute=4.960045, comm=0.011485
+Hybrid N=1024 P=4 T=4 schedule=static: total=5.276001 compute=5.259645 comm=0.016354
+    Result: total=5.276001, compute=5.259645, comm=0.016354
+Hybrid N=1024 P=4 T=4 schedule=dynamic: total=5.216231 compute=5.148874 comm=0.067356
+    Result: total=5.216231, compute=5.148874, comm=0.067356
+Hybrid N=1024 P=4 T=4 schedule=guided: total=5.113786 compute=5.049533 comm=0.064252
+    Result: total=5.113786, compute=5.049533, comm=0.064252
+Hybrid N=1024 P=4 T=8 schedule=static: total=5.159186 compute=5.148125 comm=0.011060
+    Result: total=5.159186, compute=5.148125, comm=0.011060
+Hybrid N=1024 P=4 T=8 schedule=dynamic: total=5.691809 compute=5.283617 comm=0.408192
+    Result: total=5.691809, compute=5.283617, comm=0.408192
+Hybrid N=1024 P=4 T=8 schedule=guided: total=5.539532 compute=5.048834 comm=0.490696
+    Result: total=5.539532, compute=5.048834, comm=0.490696
+
+=== Summary ===
+Eksperimen selesai pada: Sat Dec  6 03:58:31 PM WIB 2025
+
+Kombinasi yang diuji:
+  - Ukuran matriks: 512 1024
+  - Jumlah proses MPI: 1 2 4
+  - Jumlah thread OpenMP: 2 4 8
+  - Schedule OpenMP: static dynamic guided
